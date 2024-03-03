@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>To-do list</title>
+        
+       <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+       <script src="https://kit.fontawesome.com/6d10b4b1a9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="title">
+                    <h1 class="title__h1">To-Do list</h1>
+                    <p class="title__text"><span id="taskCounter">0</span> tasks</p>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <div class="container">
+                <form id="form">
+                    <div class="btn-container">
+                        <input type="text" class="btn-container__input" id="taskInput" placeholder="I need to..."/>
+                        <button class="btn-container__submit" type="submit">add new</button>
+                    </div>
+                </form>
+                
+                <ul id="tasksList" class="list">
+                </ul>
+            </div>
+        </section>
+        
+        <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

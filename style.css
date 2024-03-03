@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    background-color: #ebe8e0;
+    background-image: linear-gradient(161.15deg, #E3EDFE 12.73%, #E7D9CD 72.95%);
+}
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+
+.header {
+    border-bottom-left-radius: 50px;
+    background:  url('bg2.png') right bottom/contain no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.title {
+    text-transform: lowercase;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 1px 1px #585858;
+}
+.title__h1 {
+    font-size: 50px;
+    
+}
+
+.title__text {
+    font-size: 20px;
+}
+
+
+.btn-container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.btn-container__input {
+    flex: 2;
+    height: 50px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.btn-container__input:focus {
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+input[type="text"]::placeholder {
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 200;
+}
+.btn-container__submit {
+    flex: 1;
+    height: 50px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #DF5A53;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+.list__item {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(100%);
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.list__item__btns i {
+    padding-right: 15px;
+    pointer-events: none;
+}
+
+.element-show {
+    transform: translateY(0%);
+}
+.task-title_done {
+    text-decoration: line-through;
+}
